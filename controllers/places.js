@@ -5,6 +5,13 @@ router.get('/new', (req, res) => {
 })
 
 
+//POST /places
+router.post('/', (req, res) => {
+    console.log(req.body)
+    res.send('POST /places')
+})
+
+//Get /places
 router.get('/', (req, res) => {
     let places = [{
         name: 'H-Thai-ML',
@@ -23,5 +30,8 @@ router.get('/', (req, res) => {
 
     res.render('places/index', { places })
 })
+
+
+
 
 module.exports = router

@@ -1,5 +1,6 @@
 const React = require('react')
 const Def = require('../default')
+app.use(express.urlencoded({ extended: true }))
 
 
 function index(data) {
